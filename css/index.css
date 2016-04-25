@@ -60,7 +60,19 @@ a:hover {
 
 .weather {
     background-image: url(/img/screenShotWeather.png);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
+
+.calc {
+    background-image: url(/img/screenShotCalc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
 
