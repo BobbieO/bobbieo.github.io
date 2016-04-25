@@ -1,0 +1,51 @@
+body {
+    background-image: url(/img/fresh_snow.png);
+}
+
+.text {
+    font-family: "Prata", serif;
+    color: white;
+}
+
+.main-head {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: "Prata", serif;
+    color: black;
+}
+
+.large {
+    font-size: 3em;
+}
+
+.small {
+    font-size: .5em;
+}
+
+.row {
+    text-align: center;
+}
+
+.button {
+    height: 100px;
+    width: 30%;
+    padding: 6px 10px 10px 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Prata", serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.shadow {
+     box-shadow: 4px 4px 3px black;
+}
+
+.butterfly {
+    background-image: url(/img/screenShotCaB.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
