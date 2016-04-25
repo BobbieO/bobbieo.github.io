@@ -74,6 +74,11 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+#simon {
+    background-image: url(/img/screenShotSimon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
