@@ -1,0 +1,51 @@
+body {
+    background: url(/img/fourSeasons.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: "Tinos", serif, sans-serif;
+}
+
+.main-heading {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 4em;
+    text-shadow: 2px 2px 4px #000000;
+    color: #e3e9dd;
+}
+
+.inner-text {
+    margin-left: 100px;
+}
+
+h2 {
+    margin-bottom: 0px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#map-canvas {
+    height: 481px;
+    border: 5px double black;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.position {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #e3e9dd;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.weather-block {
+    margin-top: 50px;
+    background-color: #e3e9dd;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.bold {
+    font-weight: bold;
+}
