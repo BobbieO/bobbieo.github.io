@@ -12,7 +12,7 @@ body {
     margin-top: 80px;
     margin-bottom: 80px;
     font-family: "Prata", serif;
-    color: black;
+    color: #181818;
 }
 
 .large {
@@ -32,15 +32,15 @@ body {
     width: 30%;
     padding: 6px 10px 10px 10px;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #181818;
     border-radius: 10px;
     font-family: "Prata", serif;
     color: white;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .shadow {
-     box-shadow: 4px 4px 3px black;
+     box-shadow: 4px 4px 3px #181818;
 }
 
 .butterfly {
