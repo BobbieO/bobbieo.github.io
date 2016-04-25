@@ -1,0 +1,67 @@
+body {
+    /*if browser doesn't support fancy background*/
+    background-image: url(/img/field.jpg) no-repeat center;
+
+    /*to make layers: background image, tree image, flowers image, clouds images*/
+    background:
+        url(/img/cloud.png) no-repeat top left,
+        url(/img/cloud.png) no-repeat top right,
+        url(/img/flowers.png) no-repeat bottom right,
+        url(/img/tree.png) no-repeat center,
+        url(/img/field.jpg) no-repeat center;
+    background-size: 25%, 25%, 20%, 75%, cover;
+    font-family: "Oleo Script Swash Caps", cursive;
+    color: #2d2518;
+}
+
+.main-head {
+    font-size: 3em;
+    display: inline-block;
+    width: 50%;
+}
+
+.high-score, .end {
+    display: inline-block;
+    width: 50%;
+    font-size: 2em;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.score {
+    font-size: 2em;
+    width: 50%;
+}
+
+.cage {
+    background-color: transparent;
+    height: 200px;
+    width: 33%;
+    float: left;
+
+    /*custom cursor image*/
+    cursor: url(/img/net.png), default;
+}
+
+button {
+    background-color: #f2d365;
+    border-radius: 5px;
+    color: #2d2518;
+    border: 1px solid #2d2518;
+    margin-top: 50px;
+    font-size: 2.5em;
+}
+
+.link {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+a:link, a:visited {
+    color: #2d2518;
+    text-decoration: underline;
+}
+
+.invisible img {
+    opacity: 0;
+}
