@@ -1,0 +1,99 @@
+body {
+    background-color: #85c078;
+}
+
+.center {
+    text-align: center;
+}
+
+#inputboxes {
+    padding-top: 40px;
+}
+
+input {
+    background-color: #48a034;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 50px;
+    font-size: 23px;
+    color: #0a1e06;
+    border: 4px inset #99ca8e;
+}
+
+#numboxes {
+    width: 300px;
+    height: 425px;
+    margin: auto;
+}
+
+#bothboxes {
+    border: 2px solid black;
+    height: 600px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-image: url("/img/woodpanel.jpg");
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px #0a1e06;
+}
+
+.circle {
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    margin-left: 337px;
+    border: 2px outset #3d0000;
+    background-color: 
+        background: #8E0E00; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #1F1C18 , #8E0E00) ; /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        ; 
+        /*Gradient from uigradients, "Netflix" reversed.*/
+}
+
+button {
+    font-size: 35px;
+    border-radius: 8px;
+    background-color: #48a034;
+    color: #0a1e06;
+    border: 4px inset #99ca8e;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+.quarter {
+    width: 25%;
+    float: left;
+}
+
+#opEquals {
+    width: 50%;
+    float: left;
+}
+
+#leftOperand, #rightOperand {
+    width: 90px;
+    padding-left: 10px;
+}
+
+#midInput {
+    width: 70px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    background-image: url("/img/dewgrass.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
