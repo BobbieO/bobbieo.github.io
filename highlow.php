@@ -1,6 +1,6 @@
 <?php
 //require goes here when done.
-
+require_once '../Input.php';
 
 //start session
 session_start();
@@ -21,22 +21,7 @@ $sessionId = session_id();
         }
     }
 
-
-
-
-
-    // $minNum = $_GET['minNum'];
-
-    // return ['minNum' => $minNum];
-
-
-
-
-
     $message = 'Please enter a minimum and maximum number range.';
-
-    // $minNum = $_POST['minNum'] ? $_GET['minNum'] : ' ';
-    // $maxNum = $_POST['maxNum'] ? $_GET['maxNum'] : ' ';
 
     function checkNum() {
         // assess and assign num values entered into form
