@@ -1,24 +1,60 @@
 <?php
 //require goes here when done.
 
+
+//start session
+session_start();
+
+//give it an ID
+$sessionId = session_id();
+
 // function pageController()
 // {
-    $message = 'Please enter a minimum and maximum number range.';
 
-    
-    // assess and assign num values entered into form
-    function numAssess() 
+    //to check if number entered
+    function numsEntered()
     {
-        if ($minNum < $maxNum) {
-            $min = $minNum;
-            $max = $maxNum;
-        } else if ($minNum > $maxNum) {
-            $min = $maxNum;
-            $max = $minNum;
-        } else if (!is_numeric($minNum) || !is_numeric($maxNum) ) {
-            $message = "We need a number value.\n";
+        if(isset($_SESSION["someNumbers"])) {
+            return true;
+        } else {
+            return false;
         }
     }
+
+
+
+
+
+    // $minNum = $_GET['minNum'];
+
+    // return ['minNum' => $minNum];
+
+
+
+
+
+    $message = 'Please enter a minimum and maximum number range.';
+
+    // $minNum = $_POST['minNum'] ? $_GET['minNum'] : ' ';
+    // $maxNum = $_POST['maxNum'] ? $_GET['maxNum'] : ' ';
+
+    function checkNum() {
+        // assess and assign num values entered into form
+        if(numsEntered) {
+            if ($minNum < $maxNum) {
+                $min = $minNum;
+                $max = $maxNum;
+            } else if ($minNum > $maxNum) {
+                $min = $maxNum;
+                $max = $minNum;
+            } else if (!is_numeric($minNum) || !is_numeric($maxNum) ) {
+                $message = "We need a number value.";
+            }
+        } else {
+            $message = "Please enter two numbers.";
+        }
+    }
+
 
 
 
