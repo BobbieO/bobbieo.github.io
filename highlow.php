@@ -91,7 +91,7 @@ $sessionId = session_id();
 
 <h1>High-Low</h1>
 <p><?=$message;?></p>
-<form>
+<form method="POST">
     <div>
         <input type="text" id="minNum" name="minNum" placeholder="minimum number">
         <label for="minNum"></label>
