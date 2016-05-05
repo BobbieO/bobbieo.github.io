@@ -1,4 +1,4 @@
-html {
+body {
     /*if browser doesn't support fancy background*/
     background-image: url(/img/field.jpg) no-repeat center;
 
