@@ -1,4 +1,4 @@
-body {
+html {
     /*if browser doesn't support fancy background*/
     background-image: url(/img/field.jpg) no-repeat center;
 
@@ -12,6 +12,7 @@ body {
     background-size: 25%, 25%, 20%, 75%, cover;
     font-family: "Oleo Script Swash Caps", cursive;
     color: #2d2518;
+    min-height: 100%;
 }
 
 .main-head {
