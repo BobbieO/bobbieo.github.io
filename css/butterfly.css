@@ -16,7 +16,7 @@ body {
     font-family: "Oleo Script Swash Caps", cursive;
     color: #2d2518;
 }
-html{
+html, body{
     min-height: 100%;
 }
 
