@@ -40,6 +40,7 @@ ul {
 .instruct {
     text-align: right;
     font-size: 1.3em;
+    text-shadow: 1px 1px 1px #f2d365;
 }
 
 .cage {
