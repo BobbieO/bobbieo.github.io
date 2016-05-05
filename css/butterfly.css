@@ -15,6 +15,8 @@ body {
     background-size: 25%, 25%, 20%, 75%, cover;
     font-family: "Oleo Script Swash Caps", cursive;
     color: #2d2518;
+}
+html{
     min-height: 100%;
 }
 
