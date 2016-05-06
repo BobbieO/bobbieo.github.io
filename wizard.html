@@ -43,6 +43,10 @@
             </div>
         </div>
 
+        <div class="btn">
+            <button id="reset">Start Over</button>
+        </div>
+
     </div>
 
     <!-- audio file courtesty of Brandino480 via soundbible.com -->
@@ -92,6 +96,7 @@
                     });
                 $(".dragon").html("<img src='/img/purpleDragon.png'>");
                 $(".wizard").html("<img src='/img/wizard-icon.png'>");
+                $("#reset").css("background-color", "#9b7149");
                 $(document).off("keydown");
                 $(document).keydown(movements);
             }; 
