@@ -107,7 +107,14 @@
             }; 
          });
 
-        function movements(event) { 
+        //var and fxn to check for movements, used in animation below
+        var isMoving = false;
+
+        function movements(event) {
+            if (isMoving) {
+                return;
+            }; 
+
             // var to store user input, 'concatenated' 
             userInput.push(event.keyCode);
    
@@ -117,10 +124,20 @@
             var fireballMove = document.getElementById("wizFire");
 
             if (event.keyCode=='65') {
-                $(".wizard img").animate({"margin-left": "-=90px"});
+                //to find character position, check for mvt, animate it.
+                //isMoving prevents user from triggering mvt too fast for animation to complete
+                if( parseInt($(".wizard img").css("margin-left")) >= 0 ) {
+                    isMoving = true;
+                    $(".wizard img").animate({"margin-left": "-=90px"});
+                    isMoving = false;
+                };
             };
             if (event.keyCode=='68') {
-                $(".wizard img").animate({"margin-left": "+=90px"});
+                if( parseInt($(".wizard img").css("margin-left")) <= 380 ) {
+                    isMoving = true;
+                    $(".wizard img").animate({"margin-left": "+=90px"});
+                    isMoving = false;
+                };
             };
 
             //for "fighting" (only wizard fire now)
@@ -129,11 +146,13 @@
                     $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300px"}, function() {
                         $(".dragon").html("<img src='/img/explode.png'>"); 
                         $("#wizFire").css("opacity", "0"); 
+                        
                     });
                 } else {
                     $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300px"}, function() {
                         $(".wizard").html("<img src='/img/explode.png'>");
                         $("#dragonFire").css("opacity", "0");
+
                     });
                 };
             };
@@ -142,7 +161,6 @@
 
         //NOTES TO DO:
 
-        //try to limit wizard movement
         //disable movement after fireball fires
         //disable multiple fireballs possibility
         
