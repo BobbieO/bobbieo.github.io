@@ -82,6 +82,11 @@
                 index = 0;
             }
 
+            // click listener and to renew start again
+            $("#reset").click(function(event) {
+                location.reload();
+            });
+            
             // to change intro screen to game screen upon successful entry
             if (index == codeArray.length) {
                 index = 0;
@@ -141,11 +146,6 @@
         //disable movement after fireball fires
         //disable multiple fireballs possibility
         
-        //ADD
-        //click listener and to renew start again
-        // $("#newQuest").click(function(event) {
-        //     location.reload();
-        // });
 
     })();
     </script>
