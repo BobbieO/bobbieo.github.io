@@ -140,15 +140,17 @@
                 };
             };
 
-            //for "fighting" (only wizard fire now)
+            //for "fighting"
             if (event.keyCode=='32') {
                 if(randomNum % 2 == 0) {
+                    $(document).off("keydown");
                     $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300px"}, function() {
                         $(".dragon").html("<img src='/img/explode.png'>"); 
                         $("#wizFire").css("opacity", "0"); 
                         
                     });
                 } else {
+                    $(document).off("keydown");
                     $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300px"}, function() {
                         $(".wizard").html("<img src='/img/explode.png'>");
                         $("#dragonFire").css("opacity", "0");
@@ -161,7 +163,6 @@
 
         //NOTES TO DO:
 
-        //disable movement after fireball fires
         //disable multiple fireballs possibility
         
 
