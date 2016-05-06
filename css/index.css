@@ -80,6 +80,12 @@ a:hover {
     background-size: cover;
 }
 
+#wizard {
+    background-image: url(/img/screenWizard.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
 
 
 
