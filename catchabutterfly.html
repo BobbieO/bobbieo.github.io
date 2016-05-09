@@ -103,8 +103,9 @@ $(document).ready(function() {
     // var for later grabbing all elements by class
     var butterfly = $(".butterfly");
 
-    // variable for game count
+    // variables for game count
     var score = 0;
+    var highScore = 0;
 
     // variable to use in game function to vanish butterfly
     var disappear;
@@ -116,8 +117,8 @@ $(document).ready(function() {
 
     // if "highScore" from localStorage exists assign highScore the value from localStorage, show it on screen.
     if (localStorage.highScore) {
-        var highScore = localStorage.getItem("highScore");
-         $(".high-score").html("High Score: " + highScore);
+        highScore = localStorage.getItem("highScore");
+        $(".high-score").html("High Score: " + highScore);
     };
 
     // click listener and game start
