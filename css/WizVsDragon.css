@@ -40,20 +40,20 @@ button {
 }
 
 .dragon img {
-    /*margin-top: 380px;*/
-    /*margin-right: 135px;*/
+    margin-top: 180%;
+    margin-left: 80%;
 }
 
 .fire {
     text-align: center;
-    /*margin-top: 430px;*/
+    margin-top: 430%;
 }
 .fire img {
     opacity: 0;
 }
 
 .wizard img {
-    /*margin-top: 400px;*/
-    /*margin-left: 200px;*/
+    margin-top: 300%;
+    margin-left: 200%;
     animation-iteration-count: 2;
 }
