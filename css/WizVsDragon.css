@@ -3,6 +3,10 @@ body {
     background-size: cover;
 } 
 
+.position {
+    position: absolute;
+}
+
 button {
     border-radius: 10px;
     border: 3px solid #333333;
@@ -10,7 +14,7 @@ button {
     color: #333333;
     font-family: "Monofett", sans-serif, serif;
     font-size: 2em;
-    margin-top: 70px;
+    /*margin-top: 70px;*/
 
 }
 
@@ -36,20 +40,20 @@ button {
 }
 
 .dragon img {
-    margin-top: 380px;
-    margin-right: 135px;
+    /*margin-top: 380px;*/
+    /*margin-right: 135px;*/
 }
 
 .fire {
     text-align: center;
-    margin-top: 430px;
+    /*margin-top: 430px;*/
 }
 .fire img {
     opacity: 0;
 }
 
 .wizard img {
-    margin-top: 400px;
-    margin-left: 200px;
+    /*margin-top: 400px;*/
+    /*margin-left: 200px;*/
     animation-iteration-count: 2;
 }
