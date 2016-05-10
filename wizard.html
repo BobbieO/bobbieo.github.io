@@ -17,11 +17,11 @@
     <div class="container position">
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <h2 class="leftText fontPos">Enter the Konami Code to Start</h2>
             </div>
 
-            <div class="col-md-6 rightDiv">
+            <div class="col-md-6 text-right">
                 <h2 class="rightText"></h2>
             </div>
         </div>
@@ -44,7 +44,7 @@
         </div>
 
         <div class="btn">
-            <span class="position"><button id="reset">Start Over</button></span>
+            <span class=""><button id="reset">Start Over</button></span>
         </div>
 
     </div>
@@ -128,14 +128,14 @@
                 //isMoving prevents user from triggering mvt too fast for animation to complete
                 if( parseInt($(".wizard img").css("margin-left")) >= 0 ) {
                     isMoving = true;
-                    $(".wizard img").animate({"margin-left": "-=90px"});
+                    $(".wizard img").animate({"margin-left": "-=90%"});
                     isMoving = false;
                 };
             };
             if (event.keyCode=='68') {
                 if( parseInt($(".wizard img").css("margin-left")) <= 380 ) {
                     isMoving = true;
-                    $(".wizard img").animate({"margin-left": "+=90px"});
+                    $(".wizard img").animate({"margin-left": "+=90%"});
                     isMoving = false;
                 };
             };
@@ -144,14 +144,14 @@
             if (event.keyCode=='32') {
                 if(randomNum % 2 == 0) {
                     $(document).off("keydown");
-                    $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300px"}, function() {
+                    $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300%"}, function() {
                         $(".dragon").html("<img src='/img/explode.png'>"); 
                         $("#wizFire").css("opacity", "0"); 
                         
                     });
                 } else {
                     $(document).off("keydown");
-                    $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300px"}, function() {
+                    $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300%"}, function() {
                         $(".wizard").html("<img src='/img/explode.png'>");
                         $("#dragonFire").css("opacity", "0");
 
