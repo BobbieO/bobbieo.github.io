@@ -19,14 +19,12 @@
 
     <div class="row">
         <div class="col-xs-4">
-            <p>Simple</p>
-            <p>Simon</p>
+            <p class="alerts text-center">Simple Simon</p>
         </div>
 
         <div class="col-xs-4 col-xs-offset-4">
             <div>
-                <p class="status"></p>
-                <p class="status2"></p>
+                <p class="alerts status text-center"></p>
             </div>
         </div>
     </div>
@@ -124,15 +122,13 @@
                 coreGame();
                 sequenceIndexCheck = 0;
                 gameNum++;
-                $(".status").html("Success!");
-                $(".status2").html("Round " + gameNum);
+                $(".status").html("Round " + gameNum + ": Success!");
             };
         // if NOT the same, do fail code
         } else {
             console.log("wrong");
             playFail();
-            $(".status").html("Oops!");
-            $(".status2").html(" Try Again");
+            $(".status").html("Oops! Try Again");
             sequence = [];
             sequenceIndexCheck = 0;
             gameNum = 0;

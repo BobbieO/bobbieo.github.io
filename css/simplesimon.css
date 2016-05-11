@@ -5,6 +5,12 @@ body {
     background-size: cover;
 }
 
+.alerts {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+}
+
 p {
     font-size: 3.5em;
     font-weight: bold;
@@ -66,8 +72,7 @@ button {
     box-shadow: 2px 2px 4px #131313;
 }
 
-.status, .status2 {
-    text-align: right;
+.status {
     font-size: 2.5em;
     font-weight: bold;
 }
