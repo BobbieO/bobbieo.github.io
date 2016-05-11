@@ -13,9 +13,7 @@ button {
     background-color: white;
     color: #333333;
     font-family: "Monofett", sans-serif, serif;
-    font-size: 2em;
-    /*margin-top: 70px;*/
-
+    font-size: 2em; 
 }
 
 .fontPos {
@@ -43,6 +41,7 @@ button {
     text-align: center;
     margin-top: 430%;
 }
+
 .fire img {
     opacity: 0;
 }

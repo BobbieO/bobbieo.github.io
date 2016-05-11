@@ -128,14 +128,14 @@
                 //isMoving prevents user from triggering mvt too fast for animation to complete
                 if( parseInt($(".wizard img").css("margin-left")) >= 0 ) {
                     isMoving = true;
-                    $(".wizard img").animate({"margin-left": "-=90%"});
+                    $(".wizard img").animate({"margin-left": "-=90px"});
                     isMoving = false;
                 };
             };
             if (event.keyCode=='68') {
                 if( parseInt($(".wizard img").css("margin-left")) <= 380 ) {
                     isMoving = true;
-                    $(".wizard img").animate({"margin-left": "+=90%"});
+                    $(".wizard img").animate({"margin-left": "+=90px"});
                     isMoving = false;
                 };
             };
@@ -144,14 +144,14 @@
             if (event.keyCode=='32') {
                 if(randomNum % 2 == 0) {
                     $(document).off("keydown");
-                    $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300%"}, function() {
+                    $("#wizFire").css("opacity", "1").animate({"margin-left":"+=300px"}, function() {
                         $(".dragon").html("<img src='/img/explode.png'>"); 
                         $("#wizFire").css("opacity", "0"); 
                         
                     });
                 } else {
                     $(document).off("keydown");
-                    $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300%"}, function() {
+                    $("#dragonFire").css("opacity", "1").animate({"margin-right":"+=300px"}, function() {
                         $(".wizard").html("<img src='/img/explode.png'>");
                         $("#dragonFire").css("opacity", "0");
 
