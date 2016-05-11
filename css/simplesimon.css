@@ -1,30 +1,15 @@
 body {
-    background-color: #c0c7c6;
+    font-family: "Euphoria Script", cursive, serif;
+    text-shadow: 2px 2px 4px #9aa1a2;
+    background: url(/img/stainedColumns.jpg) repeat center center fixed;
+    background-size: cover;
 }
 
 p {
     font-size: 3.5em;
     font-weight: bold;
-}
-
-.container {
-    font-family: "Euphoria Script", cursive, serif;
-    position: relative;
-    z-index: 1;
-    text-shadow: 2px 2px 4px #9aa1a2;
-}
-
-.container::before {
-    content: "";
-    background: url(/img/stainedColumns.jpg) no-repeat center;
-    /*height: 900px;*/
-    min-height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
+    color: #c1cacb;
+    text-shadow: 3px 3px 5px #131313;
 }
 
 .space {
