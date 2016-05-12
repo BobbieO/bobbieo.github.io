@@ -18,6 +18,14 @@ p {
     text-shadow: 3px 3px 5px #131313;
 }
 
+.leftText {
+    border-radius: 66px 66px 5px 66px;
+}
+
+.rightText {
+    border-radius: 66px 66px 66px 5px;
+}
+
 .space {
     margin-top: 45px;
 }
