@@ -7,7 +7,7 @@ body {
 
 .alerts {
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     width: 100%;
 }
 
@@ -19,11 +19,13 @@ p {
 }
 
 .leftText {
-    border-radius: 66px 66px 5px 66px;
+    border-radius: 2px 60px 2px 60px;
+    margin-top: 10px;
 }
 
 .rightText {
-    border-radius: 66px 66px 66px 5px;
+    margin-top: 10px;
+    border-radius: 60px 2px 60px 2px;
 }
 
 .space {
@@ -78,10 +80,5 @@ button {
     border-radius: 6px;
     text-shadow: 2px 2px 4px #9aa1a2;
     box-shadow: 2px 2px 4px #131313;
-}
-
-.status {
-    font-size: 2.5em;
-    font-weight: bold;
 }
 
