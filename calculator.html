@@ -36,7 +36,6 @@
             <button class="digit quarter">9</button>
             <button class="operator quarter" id="opMult">*</button>
             
-       
             <button class="digit quarter">4</button>
             <button class="digit quarter">5</button>
             <button class="digit quarter">6</button>
@@ -98,7 +97,6 @@ decimal.addEventListener("click", function() {
     }
 });
 
-
 // inputting operator into mid box with check for box switching
 var opInput = function(event) {
     midInput.value = this.innerHTML
@@ -153,8 +151,8 @@ var clearDisplay = function(event) {
     wasOperatorUsed = false;
     rightDeciCheck = false;
     leftDeciCheck = false;
-
 }
+
 // assigns click event to C button, needs to go after clearDisplay is defined
 clear.addEventListener("click", clearDisplay);
 
