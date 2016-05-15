@@ -103,7 +103,7 @@ $(document).ready(function() {
     // var for later grabbing all elements by class
     var butterfly = $(".butterfly");
 
-    // variables for game count
+    // variables for game count and score
     var score = 0;
     var highScore = 0;
 
@@ -162,7 +162,7 @@ $(document).ready(function() {
     // to make butterfly appear
     var flashButterfly = function() {
 
-        // randomize a numerical value from 0-7 for boxes
+        // randomize a numerical value from 0-7 for cages
         var random = Math.floor(Math.random()*8);
         butterfly.eq(random).removeClass("invisible");
 
@@ -170,12 +170,12 @@ $(document).ready(function() {
         disappear = setTimeout(function(){
             butterfly.eq(random).addClass("invisible");
 
-            // repeats flashButterfly function again, recursive
+            // repeats flashButterfly function again
             flashButterfly();
         }, 1000);
     };
 
-    // var for endgame stuff: remove listeners, show user a failure thing
+    // var for endgame stuff: remove listeners, show user a failure notice
     var endGame = function(){
         $(".butterfly").off("click");
         $(".end").html("Game Over");
@@ -190,7 +190,6 @@ $(document).ready(function() {
             localStorage.setItem("highScore", currentScore);
         };
     };
-
 });
 })();
 </script>
